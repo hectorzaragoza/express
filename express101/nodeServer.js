@@ -1,3 +1,5 @@
+// EXPRESS WILL HELP US AVOID SUCH VERBOSE WEB SERVERS
+
 // Creating an http server
 // http module is a built-in nodejs module.
 const http = require('http')
