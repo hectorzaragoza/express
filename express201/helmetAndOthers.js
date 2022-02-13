@@ -1,4 +1,4 @@
-const { urlencoded } = require('express')
+
 const express = require('express')
 const app = express()
 const helmet = require('helmet')
@@ -18,7 +18,8 @@ app.use(express.urlencoded({extended: false}))
 app.post('/ajax', (req, res) => {
     console.log("Request headers", req.headers)
     console.log("Req.body: ", req.body)
-    res.send("test")
+    // Any time you are responding with json...use this method!
+    res.json("test")
 })
 
 app.listen(3000)
